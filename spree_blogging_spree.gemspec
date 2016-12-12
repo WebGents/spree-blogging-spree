@@ -2,13 +2,13 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_blogging_spree'
-  s.version     = '2.3.0'
+  s.version     = '3.1'
   s.summary     = 'BloggingSpree: A Spree blogging solution'
   s.description = 'A basic blogging solution for use with the Spree E-Commerce platform.'
   s.required_ruby_version = '>= 1.9.3'
 
-  s.author    = 'Stefan Senk, Sumit Sharma'
-  s.email     = 'forever.sumitsharma@gmail.com'
+  s.author    = 'JungleCoders'
+  s.email     = 'thomas@webgents.dk'
   # s.homepage  = 'http://www.spreecommerce.com'
 
   #s.files       = `git ls-files`.split("\n")
@@ -16,8 +16,9 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 2.3.0'
-  s.add_dependency 'acts-as-taggable-on', '~> 3.0.2'
+  s.add_dependency 'spree_core', '~> 3.1.0'
+  s.add_dependency 'acts-as-taggable-on', '~> 4.0'
+  s.add_dependency 'tinymce-rails'
 
   s.add_development_dependency 'capybara', '~> 2.2.1'
   s.add_development_dependency 'coffee-rails', '~> 4.0.0'

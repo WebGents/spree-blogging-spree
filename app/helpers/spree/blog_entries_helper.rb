@@ -6,6 +6,7 @@ module Spree
     end
 
     def blog_entry_permalink(e)
+      puts 'nigger'
       unless e.published_at.nil?
         blog_entry_permalink_path :year => e.published_at.strftime("%Y"), :month => e.published_at.strftime("%m"), :day => e.published_at.strftime("%d"), :slug => e.permalink
       else

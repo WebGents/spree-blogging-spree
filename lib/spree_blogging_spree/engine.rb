@@ -1,6 +1,8 @@
 module SpreeBloggingSpree
   class Engine < Rails::Engine
     require 'spree/core'
+    require 'acts-as-taggable-on'
+    require 'tinymce-rails'
     isolate_namespace Spree
     engine_name 'spree_blogging_spree'
 
